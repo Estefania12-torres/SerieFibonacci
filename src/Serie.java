@@ -37,7 +37,7 @@ public class Serie { //Se usa un almacén de valores para la serie
             scanner.close(); //Se libera los recursos asociados a la entrada del usuario
         }
 
-        public Map<Integer, Long> getValorList() { //Devuelve un Map<Integer, Long>
+        public Map<Integer, Long> getValorList() { //método para obtener el campo valorList
             return valorList;
         }
 
