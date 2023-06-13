@@ -34,7 +34,7 @@ public class Serie { //Se usa un almacén de valores para la serie
             long fibonacci = getFibonacci(posicion);  // Posición pasa como argumento y se asigna en variable fibonacci
             System.out.println("El valor de Fibonacci en la posición " + posicion + " es: " + fibonacci);
 
-            scanner.close(); //Se libera los recursos asociados a la entrada del usuario
+            scanner.close(); //Libera los recursos asociados a la entrada del usuario
         }
 
         public Map<Integer, Long> getValorList() { //método para obtener el campo valorList
