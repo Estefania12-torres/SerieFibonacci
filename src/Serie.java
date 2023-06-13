@@ -16,7 +16,7 @@ public class Serie { //Se usa un almacén de valores para la serie
             if (valorList.containsKey(position)) {
                 return valorList.get(position);
             }
-            // Si el valor no está en "valorList", se calcula el número de "Fibonacci" para la posición dada utilizando 
+            // Si el valor no está en "valorList", se calcula el número de "Fibonacci" para la posición dada 
            
             long resultado = getFibonacci(position - 1) + getFibonacci(position - 2);
             valorList.put(position, resultado);
