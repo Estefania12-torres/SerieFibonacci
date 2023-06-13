@@ -9,6 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Serie serie = new Serie(); 
+        Serie serie = new Serie(); //Está linea de codigo se encarga de crear una instancia de la clase Serie a la variable serie
+                                   //Es decir, crea un objeto de la clase Serie y lo asigna a la varible serie
+                                   //para accerder a los atributos y método
     }
 }
