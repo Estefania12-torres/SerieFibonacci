@@ -12,5 +12,11 @@ public class Main {
         Serie serie = new Serie(); //Está linea de codigo se encarga de crear una instancia de la clase Serie a la variable serie
                                    //Es decir, crea un objeto de la clase Serie y lo asigna a la varible serie
                                    //para accerder a los atributos y método
+        
+        
+        // Se declara la variable posicion con valor de int y que se inicialice con valor de 50
+        int posicion = 50;
+        long fibonacci = serie.getFibonacci(posicion);
+                
     }
 }
