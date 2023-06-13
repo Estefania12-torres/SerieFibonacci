@@ -11,6 +11,8 @@ public class Serie {
     }
     //La declaración "public long getFibonacci(int posicion)" define un método público llamado "getFibonacci" que acepta un parámetro de tipo "int" llamado "posicion".
     public long getFibonacci(int position) {
+        //"if (posicion == 0 || posicion == 1):" Esta condición verifica si la posición proporcionada es 0 o 1. Si es así, se trata de los casos base de la secuencia 
+        //de Fibonacci, donde el valor es siempre 1. En este caso, se devuelve 1.
         if (position == 0 || position == 1) {
             return 1;
         } else {
