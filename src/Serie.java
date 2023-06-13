@@ -31,7 +31,7 @@ public class Serie { //Se usa un almacén de valores para la serie
             System.out.print("Ingrese la posición de Fibonacci: ");
             int posicion = scanner.nextInt();
 
-            long fibonacci = getFibonacci(posicion);
+            long fibonacci = getFibonacci(posicion);  // La variable posicion se asigna como argumento y asigna el resultado a la variable fibonacci
             System.out.println("El valor de Fibonacci en la posición " + posicion + " es: " + fibonacci);
 
             scanner.close();
