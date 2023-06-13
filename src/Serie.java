@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Iterator;
 public class Serie {
-    //Esta línea declara un campo de clase llamado valorList que es un mapa (HashMap) que se utilizará para almacenar los valores calculados de la serie.
+    //La  clase llamado valorList que es un mapa (HashMap) que se utilizará para almacenar los valores calculados de la serie.
     private Map<Integer, Long> valorList;
     public Serie() {
         this.valorList = new HashMap<>();
@@ -13,13 +13,13 @@ public class Serie {
         if (position == 0 || position == 1) {
             return 1;
         } else {
-            //"if (valorList.containsKey(posicion)):" Verifica si ya se ha calculado y almacena el valor para la posición dada en valorList. valorList es un 
-            //mapa donde se almacenan los resultados previamente calculados.
+            // Verifica si ya se ha calculado y almacena el valor para la posición dada en valorList. valorList es un 
+       
             if (valorList.containsKey(position)) {
                 return valorList.get(position);
             }
-            //"long resultado = getFibonacci(posicion - 1) + getFibonacci(posicion - 2);:" Si el valor no está en "valorList", se calcula el número de "Fibonacci" para la posición dada utilizando 
-            //la recursión. Se llama a "getFibonacci" dos veces, una vez con la posición disminuida en 1 y otra vez con la posición disminuida en 2. Luego, los resultados se suman para obtener el resultado final.
+            // Si el valor no está en "valorList", se calcula el número de "Fibonacci" para la posición dada utilizando 
+           
             long resultado = getFibonacci(position - 1) + getFibonacci(position - 2);
             //Conservacion del resultado calculado en "valorList" para futuras referencias y cálculos.
             valorList.put(position, resultado);
@@ -28,29 +28,31 @@ public class Serie {
 
         }
 
-    public Map<Integer, Long> getValorList() {
-        return valorList;
-    }
+    public void calcularFibonacciConScanner() {
+            Scanner scanner = new Scanner(System.in);
 
-    public void setValorList(Map<Integer,Long>valorList){
-        this.valorList=valorList;
-    }
-    private void printValorList() {
-        StringBuilder builder = new StringBuilder();
-        for (Map.Entry<Integer, Long> entry : valorList.entrySet()) {
-            if (builder.length() > 0) {
-                builder.append(" , ");
-            }
-            builder.append(entry.getValue());
+            System.out.print("Ingrese la posición de Fibonacci: ");
+            int posicion = scanner.nextInt();
+
+            long fibonacci = getFibonacci(posicion);
+            System.out.println("El valor de Fibonacci en la posición " + posicion + " es: " + fibonacci);
+
+            scanner.close();
         }
-        System.out.println(builder.toString());
-    }
 
-    public String toString() {
-        return "Serie: " + valorList.toString();
-    }
+        public Map<Integer, Long> getValorList() {
+            return valorList;
+        }
 
-}
+        public void setValorList(Map<Integer, Long> valorList) {
+            this.valorList = valorList;
+        }
+
+        @Override
+        public String toString() {
+            return "Serie{valorList=" + valorList + '}';
+        }
+    }
 
 
 
