@@ -37,16 +37,16 @@ public class Serie { //Se usa un almacén de valores para la serie
             scanner.close(); //Se libera los recursos asociados a la entrada del usuario
         }
 
-        public Map<Integer, Long> getValorList() {
+        public Map<Integer, Long> getValorList() { //Devuelve un Map<Integer, Long>
             return valorList;
         }
 
-        public void setValorList(Map<Integer, Long> valorList) {
-            this.valorList = valorList;
+        public void setValorList(Map<Integer, Long> valorList) { 
+            this.valorList = valorList; //El uso de this.valorList se refiere al campo de la clase,
         }
 
         @Override
-        public String toString() {
+        public String toString() { // Devuelve una representación en forma de cadena de la instancia de la clase Serie
             return "Serie{valorList=" + valorList + '}';
         }
     }
