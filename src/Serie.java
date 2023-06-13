@@ -9,7 +9,7 @@ public class Serie {
     public Serie() {
         this.valorList = new HashMap<>();
     }
-
+    //La declaración "public long getFibonacci(int posicion)" define un método público llamado "getFibonacci" que acepta un parámetro de tipo "int" llamado "posicion".
     public long getFibonacci(int position) {
         if (position == 0 || position == 1) {
             return 1;
