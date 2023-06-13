@@ -23,6 +23,15 @@ public class Main {
         //Lo que hace esta linea de codigo es encargar de imprimir directamente el Hashmap
         Map<Integer, Long> valorList = serie.getValorList();
                 System.out.println(valorList);
+        
+    
+        //En el presente bloque de codigo, se utiliza el Scanner para la obtención de la posición de Fibonacci desde el usuario
+                Scanner scanner = new Scanner(System.in);
+                System.out.print("Ingrese la posición de Fibonacci: ");
+                posicion = scanner.nextInt();
+                fibonacci = serie.getFibonacci(posicion);
+                System.out.println("El valor de Fibonacci en la posición " + posicion + " es: " + fibonacci);
+                scanner.close();
 
 
                 
