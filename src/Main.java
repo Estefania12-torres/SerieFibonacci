@@ -17,6 +17,14 @@ public class Main {
         // Se declara la variable posicion con valor de int y que se inicialice con valor de 50
         int posicion = 50;
         long fibonacci = serie.getFibonacci(posicion); //este codigo obtiene el valor de Fibonacci en la posicion 50
+        
+          
+        
+        //Lo que hace esta linea de codigo es encargar de imprimir directamente el Hashmap
+        Map<Integer, Long> valorList = serie.getValorList();
+                System.out.println(valorList);
+
+
                 
     }
 }
