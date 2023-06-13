@@ -5,14 +5,11 @@ import java.util.Iterator;
 public class Serie {
     //Esta línea declara un campo de clase llamado valorList que es un mapa (HashMap) que se utilizará para almacenar los valores calculados de la serie.
     private Map<Integer, Long> valorList;
-
     public Serie() {
         this.valorList = new HashMap<>();
     }
-    //La declaración "public long getFibonacci(int posicion)" define un método público llamado "getFibonacci" que acepta un parámetro de tipo "int" llamado "posicion".
+    //calculo del valor de Fibonacci para una posición dada. Si el valor ya está calculado y almacenado en el mapa, se devuelve ese valor.
     public long getFibonacci(int position) {
-        //Esta condición verifica si la posición proporcionada es 0 o 1. Si es así, se trata de los casos base de la secuencia 
-        //de Fibonacci, donde el valor es siempre 1. En este caso, se devuelve 1.
         if (position == 0 || position == 1) {
             return 1;
         } else {
