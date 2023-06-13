@@ -16,7 +16,7 @@ public class Main {
         
         // Se declara la variable posicion con valor de int y que se inicialice con valor de 50
         int posicion = 50;
-        long fibonacci = serie.getFibonacci(posicion);
+        long fibonacci = serie.getFibonacci(posicion); //este codigo obtiene el valor de Fibonacci en la posicion 50
                 
     }
 }
