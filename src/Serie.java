@@ -1,10 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.*;
-
+import java.util.Iterator;
 public class Serie {
-    //"private Map<Integer, Long> valorList;:" Esta línea declara un campo de clase llamado valorList que es un mapa (HashMap) que se utilizará para almacenar los valores calculados de la serie.
+    //Esta línea declara un campo de clase llamado valorList que es un mapa (HashMap) que se utilizará para almacenar los valores calculados de la serie.
     private Map<Integer, Long> valorList;
 
     public Serie() {
