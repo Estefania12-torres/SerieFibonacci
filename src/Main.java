@@ -8,5 +8,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        
+        Serie serie = new Serie(); 
     }
 }
