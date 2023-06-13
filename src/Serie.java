@@ -16,6 +16,8 @@ public class Serie {
         if (position == 0 || position == 1) {
             return 1;
         } else {
+            //"if (valorList.containsKey(posicion)):" Verifica si ya se ha calculado y almacena el valor para la posición dada en valorList. valorList es un 
+            //mapa donde se almacenan los resultados previamente calculados.
             if (valorList.containsKey(position)) {
                 return valorList.get(position);
             }
